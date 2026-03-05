@@ -1,0 +1,498 @@
+[
+  {
+    "id": 1,
+    "name": "Activewear",
+    "price": 1499,
+    "category": "Women",
+    "type": "Activewear",
+    "description": "Comfortable and stylish activewear for workouts and casual wear.",
+    "image": "/images/Activewear.png",
+    "specifications": {
+      "Brand": "FitZone",
+      "Fabric": "Polyester & Spandex",
+      "Fit Type": "Stretch Fit",
+      "Sleeve Length": "Sleeveless",
+      "Neck Type": "Scoop Neck",
+      "Wash Care": "Machine Wash Cold",
+      "Occasion": "Workout / Casual",
+      "Available Sizes": "S, M, L, XL"
+    },
+    "reviews": [
+      {
+        "username": "Alice",
+        "rating": 5,
+        "comment": "Super comfortable and perfect for gym sessions!"
+      },
+      {
+        "username": "Nina",
+        "rating": 1,
+        "comment": "Nice fabric and fit. Worth the price."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Dresses & Jumpsuits",
+    "price": 2199,
+    "category": "Women",
+    "type": "Dresses & Jumpsuits",
+    "description": "Elegant dresses and jumpsuits perfect for all occasions.",
+    "image": "/images/Dresses__Jumpsuits.png",
+    "specifications": {
+      "Brand": "StyleAura",
+      "Fabric": "Rayon Blend",
+      "Fit Type": "Regular Fit",
+      "Sleeve Length": "Half Sleeve",
+      "Neck Type": "V-Neck",
+      "Pattern": "Printed",
+      "Wash Care": "Hand Wash Recommended",
+      "Occasion": "Party / Formal",
+      "Available Sizes": "S, M, L, XL, XXL"
+    },
+    "reviews": [
+      {
+        "username": "Sophie",
+        "rating": 5,
+        "comment": "Absolutely love the design. Got so many compliments!"
+      },
+      {
+        "username": "Priya",
+        "rating": 4,
+        "comment": "Good quality, fits well. Could be a bit cheaper."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Tops & Tees",
+    "price": 899,
+    "category": "Women",
+    "type": "Topwear",
+    "description": "Trendy tops and t-shirts to elevate your everyday look.",
+    "image": "/images/Tops__Tees.png",
+    "specifications": {
+      "Brand": "UrbanChic",
+      "Fabric": "Cotton Blend",
+      "Fit Type": "Relaxed Fit",
+      "Sleeve Length": "Short Sleeve",
+      "Neck Type": "Round Neck",
+      "Pattern": "Solid / Graphic",
+      "Wash Care": "Machine Wash",
+      "Occasion": "Casual / Daily Wear",
+      "Available Sizes": "XS, S, M, L, XL"
+    },
+    "reviews": [
+      {
+        "username": "Riya",
+        "rating": 4,
+        "comment": "Great for casual wear, fits perfectly."
+      },
+      {
+        "username": "Anjali",
+        "rating": 5,
+        "comment": "Loved the color and fabric. Totally worth it!"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Salwar Suits",
+    "price": 1999,
+    "category": "Women",
+    "type": "Ethnic",
+    "description": "Traditional salwar suits with modern designs and vibrant colors.",
+    "image": "/images/Salwarsuits.png",
+    "specifications": {
+      "Brand": "EthnicEssence",
+      "Fabric": "Cotton Silk",
+      "Fit Type": "Regular Fit",
+      "Sleeve Length": "Full Sleeve",
+      "Pattern": "Embroidered",
+      "Wash Care": "Dry Clean Only",
+      "Occasion": "Festivals / Traditional",
+      "Available Sizes": "S, M, L, XL"
+    },
+    "reviews": [
+      {
+        "username": "Meera",
+        "rating": 5,
+        "comment": "Elegant design and vibrant colors. Perfect for festivals!"
+      },
+      {
+        "username": "Kavita",
+        "rating": 4,
+        "comment": "Good quality, just needed a slight size adjustment."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Dupattas",
+    "price": 599,
+    "category": "Women",
+    "type": "Ethnic",
+    "description": "Beautiful dupattas to pair with ethnic wear.",
+    "image": "/images/Dupattas.png",
+    "specifications": {
+      "Brand": "Traditions",
+      "Fabric": "Chiffon",
+      "Length": "2.2 meters",
+      "Pattern": "Embroidered Borders",
+      "Wash Care": "Hand Wash",
+      "Occasion": "Festive / Casual",
+      "Color": "Multiple Colors"
+    },
+    "reviews": [
+      {
+        "username": "Neha",
+        "rating": 5,
+        "comment": "The embroidery is lovely, and the material feels premium."
+      },
+      {
+        "username": "Aarti",
+        "rating": 4,
+        "comment": "Beautiful colors, just a bit shorter than expected."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Kurtas & Sets",
+    "price": 1899,
+    "category": "Women",
+    "type": "Ethnic",
+    "description": "Stylish kurtas and matching sets for festive and casual looks.",
+    "image": "/images/Kurtas__Sets.png",
+    "specifications": {
+      "Brand": "EthnicEssence",
+      "Fabric": "Cotton Blend",
+      "Fit Type": "Regular Fit",
+      "Sleeve Length": "3/4 Sleeve",
+      "Pattern": "Printed",
+      "Wash Care": "Machine Wash Cold",
+      "Occasion": "Festive / Casual",
+      "Available Sizes": "S, M, L, XL"
+    },
+    "reviews": [
+      {
+        "username": "Swati",
+        "rating": 5,
+        "comment": "Perfect for Diwali — got lots of compliments!"
+      },
+      {
+        "username": "Divya",
+        "rating": 4,
+        "comment": "Nice fabric and stitching. Fit is slightly loose."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Lehengas",
+    "price": 3499,
+    "category": "Women",
+    "type": "Ethnic",
+    "description": "Designer lehengas for weddings, parties, and special events.",
+    "image": "/images/Lehengas.png",
+    "specifications": {
+      "Brand": "RoyalWear",
+      "Fabric": "Silk Blend",
+      "Fit Type": "Flared",
+      "Length": "Full Length",
+      "Pattern": "Heavy Embroidery",
+      "Wash Care": "Dry Clean Only",
+      "Occasion": "Weddings / Special Events",
+      "Available Sizes": "M, L, XL"
+    },
+    "reviews": [
+      {
+        "username": "Pooja",
+        "rating": 5,
+        "comment": "Looks exactly like the picture. Perfect for wedding functions!"
+      },
+      {
+        "username": "Rashmi",
+        "rating": 4,
+        "comment": "Heavy and elegant, but delivery took a bit longer."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Jeans & Jeggings",
+    "price": 1299,
+    "category": "Women",
+    "type": "Bottomwear",
+    "description": "High-quality jeans and jeggings for daily comfort and style.",
+    "image": "/images/Jeans__Jeggings.png",
+    "specifications": {
+      "Brand": "DenimPro",
+      "Fabric": "Denim Cotton",
+      "Fit Type": "Skinny Fit",
+      "Rise": "Mid Rise",
+      "Wash Care": "Machine Wash",
+      "Occasion": "Casual / Daily Wear",
+      "Available Sizes": "26, 28, 30, 32, 34"
+    },
+    "reviews": [
+      {
+        "username": "Anita",
+        "rating": 5,
+        "comment": "Fits perfectly and very comfortable for everyday use."
+      },
+      {
+        "username": "Sneha",
+        "rating": 4,
+        "comment": "Good quality, but a bit tight around the waist."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Formal Blue Shirt",
+    "price": 1299,
+    "category": "Men",
+    "type": "Shirt",
+    "description": "Slim-fit formal blue shirt ideal for office and formal events.",
+    "image": "/images/formalShirt.jfif",
+    "specifications": {
+      "Brand": "ClassicMan",
+      "Fabric": "Cotton Poplin",
+      "Fit Type": "Slim Fit",
+      "Sleeve Length": "Full Sleeve",
+      "Neck Type": "Point Collar",
+      "Wash Care": "Machine Wash Cold",
+      "Occasion": "Formal / Office Wear",
+      "Available Sizes": "S, M, L, XL, XXL"
+    },
+    "reviews": [
+      {
+        "username": "Rohan",
+        "rating": 5,
+        "comment": "Great shirt for work, looks sharp and fits well."
+      },
+      {
+        "username": "Vikram",
+        "rating": 4,
+        "comment": "Nice color and fabric, but sleeves are slightly long."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Grey Suit",
+    "price": 4999,
+    "category": "Men",
+    "type": "Suit",
+    "description": "Classic tailored grey suit for business and formal occasions.",
+    "image": "/images/suits.jfif",
+    "specifications": {
+      "Brand": "Gentlemen's Choice",
+      "Fabric": "Wool Blend",
+      "Fit Type": "Tailored Fit",
+      "Jacket Length": "Regular",
+      "Lining": "Polyester",
+      "Wash Care": "Dry Clean Only",
+      "Occasion": "Business / Formal",
+      "Available Sizes": "38, 40, 42, 44"
+    },
+    "reviews": [
+      {
+        "username": "Aditya",
+        "rating": 5,
+        "comment": "Perfect suit for my business meetings. Well tailored."
+      },
+      {
+        "username": "Sandeep",
+        "rating": 4,
+        "comment": "Good quality, but the jacket pockets are a bit shallow."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Casual Polo and Trousers",
+    "price": 1599,
+    "category": "Men",
+    "type": "Casual Wear",
+    "description": "Laid-back casual polo paired with comfortable wide-leg trousers.",
+    "image": "/images/menJeans.jfif",
+    "specifications": {
+      "Brand": "UrbanTrend",
+      "Fabric": "Cotton Blend",
+      "Fit Type": "Regular Fit",
+      "Sleeve Length": "Short Sleeve (Polo)",
+      "Trousers Fit": "Wide Leg",
+      "Wash Care": "Machine Wash",
+      "Occasion": "Casual / Weekend",
+      "Available Sizes": "S, M, L, XL"
+    },
+    "reviews": [
+      {
+        "username": "Manish",
+        "rating": 5,
+        "comment": "Very comfortable outfit for weekend wear."
+      },
+      {
+        "username": "Deepak",
+        "rating": 4,
+        "comment": "Fabric feels great, but the fit is a bit loose."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Navy Blue Kurta Set",
+    "price": 1899,
+    "category": "Men",
+    "type": "Ethnic Wear",
+    "description": "Elegant navy kurta set for traditional and festive occasions.",
+    "image": "/images/menKurta.png",
+    "specifications": {
+      "Brand": "DesiVibe",
+      "Fabric": "Cotton Silk",
+      "Fit Type": "Regular Fit",
+      "Sleeve Length": "Full Sleeve",
+      "Pattern": "Solid",
+      "Wash Care": "Dry Clean Recommended",
+      "Occasion": "Festive / Traditional",
+      "Available Sizes": "M, L, XL, XXL"
+    },
+    "reviews": [
+      {
+        "username": "Ramesh",
+        "rating": 5,
+        "comment": "Looks great and very comfortable to wear."
+      },
+      {
+        "username": "Ashok",
+        "rating": 4,
+        "comment": "Good material, but the sizing runs a bit small."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Grey Printed Jacket",
+    "price": 2399,
+    "category": "Men",
+    "type": "Jacket",
+    "description": "Stylish grey jacket with trendy prints for casual wear.",
+    "image": "/images/menJacket.png",
+    "specifications": {
+      "Brand": "StreetStyle",
+      "Fabric": "Polyester",
+      "Fit Type": "Regular Fit",
+      "Sleeve Length": "Full Sleeve",
+      "Pattern": "Printed",
+      "Wash Care": "Machine Wash",
+      "Occasion": "Casual / Outdoor",
+      "Available Sizes": "S, M, L, XL"
+    },
+    "reviews": [
+      {
+        "username": "Karan",
+        "rating": 5,
+        "comment": "Perfect for chilly evenings and looks great."
+      },
+      {
+        "username": "Raj",
+        "rating": 3,
+        "comment": "Good jacket but zipper quality could be better."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Black Shirt",
+    "price": 1299,
+    "category": "Men",
+    "type": "Shirt",
+    "description": "Classic black shirt suitable for both formal and casual occasions.",
+    "image": "/images/menShirt.png",
+    "specifications": {
+      "Brand": "ClassicMan",
+      "Fabric": "Cotton Blend",
+      "Fit Type": "Slim Fit",
+      "Sleeve Length": "Full Sleeve",
+      "Neck Type": "Spread Collar",
+      "Wash Care": "Machine Wash Cold",
+      "Occasion": "Formal / Casual",
+      "Available Sizes": "S, M, L, XL, XXL"
+    },
+    "reviews": [
+      {
+        "username": "Vijay",
+        "rating": 5,
+        "comment": "Versatile shirt, works well for both office and parties."
+      },
+      {
+        "username": "Sameer",
+        "rating": 4,
+        "comment": "Good fit but fabric is a bit thin."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Printed Pink Kurti",
+    "price": 1399,
+    "category": "Women",
+    "type": "Ethnic",
+    "description": "Comfortable and colorful printed pink kurti for everyday wear.",
+    "image": "/images/pinkKurti.png",
+    "specifications": {
+      "Brand": "EthnicVibes",
+      "Fabric": "Cotton",
+      "Fit Type": "Regular Fit",
+      "Sleeve Length": "3/4 Sleeve",
+      "Pattern": "Floral Print",
+      "Wash Care": "Machine Wash",
+      "Occasion": "Casual / Daily Wear",
+      "Available Sizes": "S, M, L, XL"
+    },
+    "reviews": [
+      {
+        "username": "Shruti",
+        "rating": 5,
+        "comment": "Love the print and it’s very comfortable to wear."
+      },
+      {
+        "username": "Neelam",
+        "rating": 4,
+        "comment": "Good quality but color fades slightly after washing."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Blue Floral Printed Shirt",
+    "price": 1199,
+    "category": "Men",
+    "type": "Shirt",
+    "description": "Casual blue shirt with floral prints for a relaxed look.",
+    "image": "/images/menShirtBlue.png",
+    "specifications": {
+      "Brand": "UrbanEdge",
+      "Fabric": "Cotton Blend",
+      "Fit Type": "Regular Fit",
+      "Sleeve Length": "Short Sleeve",
+      "Pattern": "Floral Print",
+      "Wash Care": "Machine Wash",
+      "Occasion": "Casual / Outdoor",
+      "Available Sizes": "S, M, L, XL"
+    },
+    "reviews": [
+      {
+        "username": "Harish",
+        "rating": 4,
+        "comment": "Nice print and comfortable fabric."
+      },
+      {
+        "username": "Ajay",
+        "rating": 3,
+        "comment": "Fit was a bit off but good quality otherwise."
+      }
+    ]
+  }
+]

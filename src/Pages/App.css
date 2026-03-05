@@ -1,0 +1,89 @@
+.home-button {
+margin-left: 0%;
+
+}
+.product-name{
+  font-size:34px ;
+}
+.specifications li{
+font-size: larger;
+font-style: italic;
+margin: 10px;
+color: #000;
+}
+.reviews-section {
+  margin-top: 20px;
+  text-align: left;
+  width: 50%;
+}
+
+.reviews-section h2 {
+  color: #333;
+  font-size: 22px;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 5px;
+  display: inline-block;
+
+}
+.review-heading{
+  margin-top: 50px;
+  border-bottom: 2px solid rgb(121, 112, 112);
+}
+
+.review-card {
+  background: #f8f8f8;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  width: 80%;
+  
+  /*border-left: 5px solid #e74c3c;*/
+}
+
+.review-user {
+  font-size: 24px;
+  color: #333;
+}
+
+.review-comment {
+  font-size: 20px;
+  width:100%;
+  color: #555;
+  font-style: italic;
+  border: none;
+}
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #9c9999;
+  border-radius: 5px;
+  width: 100%;
+  
+}
+
+.review-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.product-image {
+  width: 500px;       
+  height: 300px;
+  object-fit: contain;  
+  border-radius: 8px; 
+  text-align: center;
+}
+
+.submit-button{
+height: 50px;
+width: 150px;
+}
