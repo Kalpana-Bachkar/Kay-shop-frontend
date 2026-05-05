@@ -3,7 +3,7 @@
 /* HERO */
 .fashion-hero {
   height: 90vh;
-  background: url("https://images.unsplash.com/photo-1520975916090-3105956dac38")
+  background: url("https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
     center/cover no-repeat;
   position: relative;
 }
@@ -12,7 +12,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .fashion-hero .container {
@@ -51,6 +51,10 @@
   border-bottom: 2px solid black;
 }
 
+.bestsellers-section {
+  padding: 30px 0;
+}
+
 /* PRODUCT CARDS */
 .fashion-card {
   transition: 0.3s;
@@ -82,7 +86,7 @@
 /* BRAND SECTION */
 .brand-section {
   background: #f8f8f8;
-  padding: 80px 20px;
+  padding: 35px 20px;
 }
 
 .brand-section h2 {
@@ -92,8 +96,7 @@
 
 /* FOOTER */
 .fashion-footer {
-  background: black;
-  color: white;
+  margin-top: 0;
 }
 
 .category-card {
@@ -101,12 +104,11 @@
   display: block;
   overflow: hidden;
   border-radius: 4px;
-  aspect-ratio: 3 / 4; /* Luxury portrait ratio */
+  aspect-ratio: 3 / 4; 
 }
 
 .category-card img {
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
   object-fit: cover;
-  transition: transform 0.6s ease;
 }

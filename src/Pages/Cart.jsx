@@ -6,29 +6,9 @@ export default function Cart(){
 
     const {cart,cartCount,loading,totalPrice,getCart, updateCart, deleteItem, clearCart }=useCart()
     // console.log(cart)
-    console.log("Cart state in Cart page:", cart);
+    // console.log("Cart state in Cart page:", cart);
 
 
-//     return(
-//         <div>
-//     {cart.length === 0 ? (
-//     <p>Cart is empty</p>
-//       ) : (
-
-   
-//     cart.map((item, index) => (
-//         <div key={index}>
-//             <p>Product ID: {item.productId}</p>
-//             <p>Quantity: {item.quantity}</p>
-//             <p>Price: {item.priceOnAddTime}</p>
-//         </div>
-//     ))
-   
-// )
-// }
-//  </div>
-
-// )  
 
 
 const handleIncrease = async (productId, currentQty) => {
@@ -67,7 +47,7 @@ return (
         </div>
 
         {cart.map((item) => (
-          <div className="card mb-3 shadow-sm" key={item.productId._id}>
+          <div className="card mb-3 shadow-sm" key={item.productId?._id}>
             <div className="row g-0 align-items-center">
 
               {/* LEFT SIDE - IMAGE */}

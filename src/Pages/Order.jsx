@@ -1,11 +1,14 @@
 // import React, { useState } from "react";
 // import { Link } from "react-router-dom";
 import { useCart } from "../Context/cartContext";
+import { useNavigate } from "react-router-dom";
 
 
 function Order({ cart }) {
 
-    const {placeOrder,address,setAddress,setCartCount}=useCart()
+    const {placeOrder,address,setAddress,setCartCount,clearCart}=useCart()
+    const navigate=useNavigate();
+    
 
   // const [address, setAddress] = useState({
   //   fullName: "",
@@ -30,7 +33,14 @@ function Order({ cart }) {
   const handlePlaceOrder=async()=>{
     const result=await placeOrder(address);
     if(result.success){
-      alert("order placed successfully")
+      // alert("order placed successfully")
+       navigate("/order-success", {
+                state: {
+                    order: result.data
+                }
+                
+            });
+            clearCart();
     //  setCartCount(0)
     }
     else{ 

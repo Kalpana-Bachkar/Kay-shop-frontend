@@ -1,10 +1,15 @@
 import { useAuth } from "./userContext";
 import { createContext, useContext, useEffect, useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 
 const CartContext = createContext();
 // const BASE_URL = "http://localhost:5000/api/cart";
+
+const BASE_URL = process.env.REACT_APP_SERVER_URL;
+// const BASE_URL = ""
+
 
 export const CartProvider = ({ children }) => {
 
@@ -22,8 +27,9 @@ export const CartProvider = ({ children }) => {
         pincode: "",
     });
 
+
     // const cartCount = cart.length;
-    const BASE_URL = "http://localhost:5000/api/cart";
+
 
 
     useEffect(() => {
@@ -43,7 +49,7 @@ export const CartProvider = ({ children }) => {
 
     const getCart = async () => {
         try {
-            const res = await axios.get(`${BASE_URL}/getcart`,
+            const res = await axios.get(`${BASE_URL}/api/cart/getcart`,
                 { withCredentials: true }
 
 
@@ -72,7 +78,8 @@ export const CartProvider = ({ children }) => {
 
 
         try {
-            await axios.post(`${BASE_URL}/addtocart`,
+
+            await axios.post(`${BASE_URL}/api/cart/addtocart`,
                 {
                     productId, quantity
                 },
@@ -98,7 +105,7 @@ export const CartProvider = ({ children }) => {
     const updateCart = async (productId, quantity) => {
         setLoading(true)
         try {
-            await axios.post(`${BASE_URL}/update`,
+            await axios.post(`${BASE_URL}/api/cart/update`,
                 {
                     productId, quantity
                 },
@@ -121,7 +128,7 @@ export const CartProvider = ({ children }) => {
     const deleteItem = async (productId) => {
         setLoading(true)
         try {
-            await axios.delete(`${BASE_URL}/deleteItem/${productId}`,
+            await axios.delete(`${BASE_URL}/api/cart/deleteItem/${productId}`,
                 {
                     withCredentials: true
                 }
@@ -143,7 +150,7 @@ export const CartProvider = ({ children }) => {
 
         setLoading(true)
         try {
-            await axios.delete(`${BASE_URL}/clearcart`,
+            await axios.delete(`${BASE_URL}/api/cart/clearcart`,
                 {
                     withCredentials: true
                 }
@@ -166,13 +173,14 @@ export const CartProvider = ({ children }) => {
     const placeOrder = async (address) => {
         try {
             console.log("Address sending:", address);
-            const res = await axios.post(`http://localhost:5000/api/order/placeOrder`,
+            const res = await axios.post(`${BASE_URL}/api/order/placeOrder`,
 
 
                 { shippingAddress: address },
                 { withCredentials: true }
             )
             console.log("success responce:", res.data)
+
             return {
                 success: true,
                 data: res.data
@@ -212,7 +220,7 @@ export const CartProvider = ({ children }) => {
     }
 
     return (
-        <CartContext.Provider value={{ cart, cartCount, totalPrice, loading, getCart, addToCart, updateCart, deleteItem, clearCart, placeOrder, address, setAddress }}>
+        <CartContext.Provider value={{ cart, cartCount, totalPrice, loading, getCart, addToCart, updateCart, deleteItem, clearCart, address, setAddress, placeOrder }}>
             {children}
         </CartContext.Provider>
 

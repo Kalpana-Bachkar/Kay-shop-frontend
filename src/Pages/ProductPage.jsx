@@ -5,6 +5,8 @@ import "./App.css";
 import { Container, Row, Col, Button, Image } from "react-bootstrap";
 
 import { useCart } from "../Context/cartContext";
+ let BASE_URL= process.env.REACT_APP_SERVER_URL;
+//  const BASE_URL="http://localhost:5000";
 
 function ProductPage() {
        const {id}=useParams();
@@ -13,17 +15,23 @@ function ProductPage() {
       const [error, setError] = useState(null);
       const [review,setReview]=useState({username:"",rating:5,comment:""})
       const {addToCart}=useCart();
+      
       // console.log(id)
     
     
       useEffect(() => {
-        fetch(`http://localhost:5000/productById/${id}`)
+      fetch(`${BASE_URL}/productById/${id}`)
           .then((res) => {
-            if (!res.ok) throw new Error("Failed to fetch");
+            if (!res.ok)
+               {
+                throw new Error("Failed to fetch");
+            }
             return res.json();
           })
           .then((data) => {
             // console.log(data.product);
+            
+            console.log("Full API response:", data.product);
             setProduct(data.product);
             
             setLoading(false);
@@ -70,6 +78,7 @@ if (loading) return <Container className="mt-5">Loading...</Container>;
           <ul className="specifications">
           {      
             product.specifications && Object.entries(product.specifications).map(([key,value])=>{
+              if (key === 'id' || key === '_id') return null;
               return(
               <li key={key}>
                 {key} : {value}

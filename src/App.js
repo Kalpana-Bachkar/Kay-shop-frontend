@@ -11,6 +11,7 @@ import { useAuth } from "./Context/userContext";
 import { useCart } from "./Context/cartContext";
 import { FaShoppingCart } from "react-icons/fa";
 import Order from "./Pages/Order";
+import OrderSuccess from "./Pages/OrderSuccess";
 //import { useContext } from "react";
 
 function App() {
@@ -118,13 +119,15 @@ function App() {
 
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/product/:id" element={<ProductPage />} />
+            <Route path="/productById/:id" element={<ProductPage />} />
 
             <Route path="/productsByCategory/:category" element={<CategoryFilter />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/getcart" element={< Cart />} />
             <Route path="/order" element={<Order cart={cart} />} />
+            <Route path="/order-success" element={<OrderSuccess />}
+            />
 
           </Routes>
         </div >

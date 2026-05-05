@@ -2,16 +2,21 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { useCart } from "../Context/cartContext";
-
+ let BASE_URL= process.env.REACT_APP_SERVER_URL 
+// const BASE_URL=""
+ 
 export default function CategoryFilter() {
     const {category}=useParams();
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const{addToCart}=useCart();
- console.log("🔍 Category from URL:", category);
+  console.log(BASE_URL)
+
+  
+//  console.log("🔍 Category from URL:", category);
   useEffect(() => {
-  fetch(`http://localhost:5000/productByCategory/${category}`)
+  fetch(`${BASE_URL}/productByCategory/${category}`)
     .then(res => {
       if (!res.ok) {
         throw new Error("Failed to fetch products");
@@ -41,7 +46,7 @@ if (error) return <p>Error: {error}</p>;
         {products.map((product) => (
           <div key={product._id} className="col-sm-6 col-md-4 col-lg-3 mb-4">
             <div className="card h-100 shadow-sm">
-              <Link to={`/product/${product._id}`}>
+              <Link to={`/productById/${product._id}`}>
               <img
                 src={product.image}
                 className="card-img-top"
@@ -59,7 +64,7 @@ if (error) return <p>Error: {error}</p>;
 
                  <div className="d-flex gap-2">
                                   <Link
-                                      to={`/product/${product._id}`}
+                                      to={`/productById/${product._id}`}
                                       className="btn btn-outline-secondary w-50"
                                    >
                                      Details
